@@ -282,7 +282,7 @@ var labels = {
 			if (helpers.isFunction(pie.options.callbacks.onload)) {
 				setTimeout(function() {
 					try {
-						pie.options.callbacks.onload();
+						pie.options.callbacks.onload(pie);
 					} catch (e) { }
 				}, labelFadeInTime);
 			}
