@@ -57,7 +57,8 @@ var text = {
 
 		pie.svg.select("#" + pie.cssPrefix + "title")
 			.attr("x", x)
-			.attr("y", y);
+			.attr("y", y)
+			.call(helpers.textWrap,50);
 	},
 
 	addSubtitle: function(pie) {

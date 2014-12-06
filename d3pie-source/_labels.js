@@ -39,7 +39,9 @@ var labels = {
 				})
 				.style("font-size", settings.mainLabel.fontSize + "px")
 				.style("font-family", settings.mainLabel.font)
-				.style("fill", settings.mainLabel.color);
+				.style("fill", settings.mainLabel.color)
+				.call(helpers.textWrap, 100);
+
 		}
 
 		// 2. Add the percentage label
