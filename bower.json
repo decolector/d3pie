@@ -3,7 +3,8 @@
 	"version": "0.1.4",
 	"homepage": "http://d3pie.org",
 	"authors": [
-		"Ben Keen <ben.keen@gmail.com>"
+		"Ben Keen <ben.keen@gmail.com>",
+		"Camilo Martinez <cmart@decolector.net>"
 	],
 	"description": "A highly configurable, re-usable script built on d3.js and jQuery for creating clear, attractive pie charts.",
 	"keywords": [
@@ -25,7 +26,7 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/benkeen/d3pie"
+		"url": "https://github.com/decolector/d3pie"
 	},
 	"dependencies": {
 		"jquery": "^2.0",
