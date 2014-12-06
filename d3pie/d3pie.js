@@ -560,6 +560,15 @@ var helpers = {
 
 	                ++createdLineCount;
 	            }
+	            //hacky method to center vertically
+	            
+	            var tspans = text.selectAll("tspan")
+	             	.each(function(d,i){ 
+	             		var ddy = (i * lineHeight) - (Math.floor(createdLineCount / 2) * lineHeight);
+	             		//console.log("linecount: " + createdLineCount);
+	             		//console.log("ddy: " + ddy);
+	             		d3.select(this).attr('dy', ddy + "em");  
+	             	});
 	        }
 
 	        arrLineCreatedCount.push(createdLineCount); //Store the line count in the array
