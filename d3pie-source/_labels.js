@@ -40,6 +40,7 @@ var labels = {
 				.style("font-size", settings.mainLabel.fontSize + "px")
 				.style("font-family", settings.mainLabel.font)
 				.style("fill", settings.mainLabel.color)
+				//.attr('text-anchor','middle')
 				.call(helpers.textWrap, 100);
 
 		}
@@ -90,7 +91,7 @@ var labels = {
 			});
 		});
 
-		var singleLinePad = 5;
+		var singleLinePad = -5;
 		var dims = labels["dimensions-" + section];
 		switch (sectionDisplayType) {
 			case "label-value1":
